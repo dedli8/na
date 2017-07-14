@@ -2,6 +2,11 @@
     var setting = {};
     var methods = {
         init: function(options){
+            if(options == undefined){
+                options = {
+                    offset: 0
+                }
+            }
             setting.offset = options.offset;
             return this.each(function(){
                 var el = this;
