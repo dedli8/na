@@ -1,0 +1,23 @@
+.inline(@va: middle){
+  display: inline-block;
+  vertical-align: @va;
+}
+
+.font(@color: @font-color-white, @size: @font-size-base, @fontFamily: @fontName-dinmed){
+  font-family: @fontFamily;
+  font-size: @size;
+  color: @color;
+}
+
+.media(@width, @ruleset){
+  @media screen and (max-width: @width) {
+    @ruleset();
+  }
+}
+
+.grid(@name, @cols: 12, @i: 1)when (@i <= @cols){
+  .@{name}@{i}{
+    width: 100%/@cols * @i;
+  }
+  .grid(@name, @cols, @i+1);
+}
