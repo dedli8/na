@@ -1,4 +1,50 @@
 @import "includes/_settings";
 @import "includes/_fonts";
 @import "includes/_mixins";
+@import "includes/_sprite";
 @import "includes/_icons";
+body{
+  .font;
+}
+.container{
+  margin: 0 auto;
+  max-width: @width-max;
+  .media(@width-mid, {
+    padding: 0 2%;
+  })
+}
+.row{
+  margin-bottom: 20px;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.col{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.grid(lg);
+.media(@width-mid, {
+  .grid(md);
+});
+.media(@width-sm, {
+  .grid(sm);
+});
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+@import "../../components/header/_header";

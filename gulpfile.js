@@ -58,7 +58,7 @@ gulp.task('sprite', function(){
             algorithm: 'binary-tree'
         }));
 
-        sprite.img.pipe(gulp.dest('build/assets/img'));
+        sprite.img.pipe(gulp.dest('build/css'));
         sprite.css.pipe(gulp.dest('dev/assets/less/includes'));
 })
 
