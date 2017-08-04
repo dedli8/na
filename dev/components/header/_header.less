@@ -1,13 +1,13 @@
 .header {
   background-color: @base-color;
-  padding: 7px 0 10px 0;
   &-line {
     a {
       .inline;
     }
     .clearfix;
-    .logo{
+    .logo {
       margin-right: 30px;
+      padding-top: 7px;
       .left;
       //.media(@width-sm, {
       //  float: none;
@@ -15,20 +15,48 @@
       //  margin-bottom: 15px;
       //})
     }
-    .nav-menu{
-      padding-top: 19px;
+    .nav-menu {
       font-size: 0;
       .left;
-          li{
-            list-style: disc outside;
-            padding-left: 30px;
-            //.inline;
-            font-size: @font-size-button;
+      ul {
+        li {
+          padding-top: 27px;
+          height: 73px;
+          box-sizing: border-box;
+          .inline;
+          padding-left: 30px;
+          font-size: @font-size-button;
+          .nav-menu-relative{
+            position: relative;
+            width: inherit;
+            &:before {
+              content: '';
+              position: absolute;
+              left: -30px;
+              top: 8px;
+              width: 6px;
+              height: 6px;
+              border-radius: 6px;
+              background-color: white;
+            }
           }
-    }
-    .contact-icons {
-      .right;
-    }
+        }
 
+          li:first-child {
+            padding-left: 0;
+          }
+          li:hover {
+            background-color: @base-color2;
+          }
+        }
+      }
+    .contact-icons {
+      padding-top: 18px;
+      .right;
+      padding-right: 15px;
+      .headerphone {
+        margin-right: 20px;
+      }
+    }
   }
 }
