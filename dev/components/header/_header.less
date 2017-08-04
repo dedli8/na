@@ -1,20 +1,28 @@
 .header {
   background-color: @base-color;
   &-line {
+    height: 73px;
     a {
       .inline;
     }
     .clearfix;
+    .nav-menu-icon{
+      .sprite(@menu);
+      display: none;
+      .media(@width-mid, {
+        display: inline-block;
+      margin-right: 35%;
+      })
+    }
     .logo {
       padding-top: 7px;
       .left;
-      //.media(@width-sm, {
-      //  float: none;
-      //  text-align: center;
-      //  margin-bottom: 15px;
-      //})
+      .media(@width-mid, {
+        float: none;
+      display: inline-block;
+      })
     }
-    .nav-menu {
+       .nav-menu {
       margin-left: 30px;
       font-size: 0;
       .left;
@@ -47,6 +55,9 @@
             background-color: @base-color2;
           }
         }
+      .media(@width-mid, {
+      display: none;
+      })
       }
     .contact-icons {
       padding-top: 18px;
