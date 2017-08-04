@@ -6,7 +6,6 @@
     }
     .clearfix;
     .logo {
-      //margin-right: 30px;
       padding-top: 7px;
       .left;
       //.media(@width-sm, {
@@ -16,6 +15,7 @@
       //})
     }
     .nav-menu {
+      margin-left: 30px;
       font-size: 0;
       .left;
       ul {
@@ -24,7 +24,6 @@
           height: 73px;
           box-sizing: border-box;
           .inline;
-          padding-left: 30px;
           font-size: @font-size-button;
           .nav-menu-relative{
             position: relative;
@@ -32,7 +31,7 @@
             &:before {
               content: '';
               position: absolute;
-              left: -30px;
+              left: -33px;
               top: 8px;
               width: 6px;
               height: 6px;
@@ -40,6 +39,9 @@
               background-color: white;
             }
           }
+        }
+        li:last-child{
+          padding-right: 0;
         }
           li:hover {
             background-color: @base-color2;
