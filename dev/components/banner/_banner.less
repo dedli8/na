@@ -1,0 +1,79 @@
+.banner {
+  background-image: url(../img/bannerbg.png);
+  color: @base-color;
+  padding-bottom: 25px;
+    .banner-information{
+      padding-top: 108px;
+      padding-left: 8.3%;
+      .banner-first-block {
+        margin-bottom: 82px;
+        .banner-information-line1 {
+          display: inline-block;
+          text-align: center;
+          .biglogo {
+            margin-bottom: 29px;
+          }
+          .banner-p-bottom {
+            font-size: 60px;
+            vertical-align: text-top;
+          }
+        }
+        .banner-information-line2 {
+          font-size: 0;
+          display: inline-block;
+          vertical-align: top;
+          .banner-p-right {
+            padding-top: 143px;
+            display: inline-block;
+            font-size: 36px;
+            margin-bottom: 52px;
+            .media(@width-sm, { padding-top: 36px; margin-bottom: 16px; });
+          }
+          .banner-p-bottom-right {
+            vertical-align: top;
+            display: inline-block;
+            font-size: @font-size-base;
+          }
+          .media(@width-sm, { margin-bottom: 82px; text-align: center; });
+        }
+        .media(@width-mid, { margin-bottom: 33px; });
+      }
+      .banner-information-line3 {
+        text-align: center;
+        font-size: 0;
+        margin-bottom: 151px;
+        button {
+          height: 47px;
+          outline: none;
+          border: none;
+          background-color: @base-color2;
+          font-size: @font-size-button;
+          color: @font-color-white;
+          padding: 18px 0 15px 0;
+          .media(@width-mid, { display: block; margin: 0 auto; })
+        }
+        button:first-child {
+          margin-right: 30px;
+          .media(@width-mid, { margin: 0 auto; margin-bottom: 10px; })
+        }
+        .media(@width-mid, { margin-bottom: 224px; });
+      }
+      .banner-button-arrow {
+        margin: 0 auto;
+        display: block;
+        padding: 0;
+        outline: none;
+        border: none;
+        background-color: inherit;
+        text-align: center;
+        .sprite(@arrowbottom);
+      }
+      .media(@width-mid, {
+        padding-top: 25px;
+      });
+      .media(@width-sm, {
+        padding-left: 0;
+      });
+    }
+}
+
