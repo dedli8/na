@@ -1,8 +1,12 @@
+@import "dev/assets/less/reset.less";
 @import "includes/_settings";
 @import "includes/_fonts";
 @import "includes/_mixins";
-@import "includes/_sprite";
 @import "includes/_icons";
+@import "includes/_sprite";
+@import "includes/_ion.rangeSlider";
+@import "includes/_ion.rangeSlider.skinHTML5";
+
 body{
   .font;
 }
@@ -13,7 +17,7 @@ body{
     padding: 0 2%;
   });
   .media(@width-sm, {
-    max-width: inherit;
+  padding: 0 5px;
   });
 }
 .row{
@@ -52,3 +56,4 @@ body{
 }
 @import "../../components/header/_header";
 @import "../../components/banner/_banner";
+@import "../../components/catalog/_catalog";
