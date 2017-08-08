@@ -1,0 +1,59 @@
+.callback{
+  &-text{
+    margin: 0 auto;
+    padding-top: 28px;
+    color: @base-color2;
+    font-family: @fontName-dinreg;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &-form{
+    width: 550px;
+    padding: 5px 5px 5px 13px;
+    margin: 0 auto;
+    background-color: @base-color;
+    text-transform: uppercase;
+    font-family: @fontName-dinreg;
+    text-align: center;
+    box-sizing: border-box;
+  &-label{
+    display: inline-block;
+    &-icon{
+      display: inline-block;
+      .sprite(@headerphone);
+      vertical-align: middle;
+      margin-right: 17px;
+    }
+   &-text{
+      display: inline-block;
+      vertical-align: middle;
+     margin-right: 30px;
+    }
+    .callback-input{
+      display: inline-block;
+      vertical-align: middle;
+      width: 233px;
+        input {
+          width: 100%;
+          height: 50px;
+      border: none;
+      outline: none;
+      display: inline-block;
+      vertical-align: middle;
+          padding: 15px;
+          box-sizing: border-box;
+      }
+    input:-moz-placeholder {
+       color: @base-color2;
+       font-size: @font-size-base;
+       font-family: @fontName-dinreg;
+     }
+    input::-webkit-input-placeholder {
+      color: @base-color2;
+      font-size: @font-size-base;
+    font-family: @fontName-dinreg;
+    }
+    }
+    }
+  }
+}
