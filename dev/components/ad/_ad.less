@@ -2,68 +2,93 @@
   background-color: @color-white;
   .font(@color-black, @font-size-base, @fontName-dinreg);
   &-container {
-    margin: 0 auto;
     display: inline-block;
+    margin: 0 auto;
     padding: 27px 15px 0 15px;
     box-sizing: border-box;
     text-align: center;
     font-size: 0;
-    margin-bottom: 20px;
-    .ad-container>*{
+    //margin-bottom: 20px;
       .media(@width-mid, {
-        display: inline-block;
+      display: block;
+      text-align: left;
       });
-    }
-    .ad-image {
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    .ad-title {
-      font-size: @font-size-base;
-      margin-bottom: 11px;
-    }
-    .ad-title-description {
-      margin-bottom: 11px;
-      font-size: 16px;
-    }
-    .ad-title-price {
-      font-size: 30px;
-      margin-bottom: 16px;
-    }
-    .ad-text {
-      font-size: 16px;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    .ad-button {
-      outline: none;
-      border: none;
-      width: 100%;
-      background-color: @base-color;
-      color: @color-white;
-      font-size: 16px;
-      padding: 15px 0 20px 0;
-    }
-  }
-  .ad-watchall-container {
-    .ad-watchall {
-      padding-right: 15px;
-      .right;
-      text-align: right;
-      a {
-        display: block;
-        font-size: @font-size-button;
-        color: @base-color2;
+      .ad-image {
+        margin-bottom: 15px;
+        img{
+          width: 100%;
+        }
+        .media(@width-mid, {
+          display: inline-block;
+        vertical-align: top;
+        width: 27.8%;
+          margin-right: 2.2%;});
       }
-      a>*{
+    .ad-header-box {
+      display: inline-block;
+      .ad-title-box {
+        text-align: left;
         display: inline-block;
-        vertical-align: middle;
+        padding-left: 14px;
+        .ad-title {
+          font-size: @font-size-base;
+          margin-bottom: 11px;
+          text-align: center;
+        }
+        .ad-title-description {
+          text-align: center;
+          margin-bottom: 11px;
+          font-size: 16px;
+        }
+        .ad-title-price {
+          font-size: 30px;
+          margin-bottom: 16px;
+          text-align: center;
+        }
       }
+      .ad-text {
+        height: 81px;
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 20px;
+        overflow: hidden;
+        .media(@width-mid, { display: inline-block;
+        font-size: @font-size-button; height: 90px}
+        );
+      }
+      .media(@width-mid, { box-sizing: border-box; width: 70% }
+      );
+    }
+      .ad-button {
+        outline: none;
+        border: none;
+        width: 100%;
+        background-color: @base-color;
+        color: @color-white;
+        font-size: 16px;
+        padding: 15px 0 20px 0;
+      }
+    }
+    .ad-watchall-container {
+      margin: 0 auto;
+      .ad-watchall {
+        padding-right: 15px;
+        .right;
+        text-align: right;
+        a {
+          display: block;
+          font-size: @font-size-button;
+          color: @base-color2;
+        }
+        a > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
         .ad-watchall-icon {
           .sprite(@arrowright);
           margin-left: 18px;
+        }
       }
+      .clearfix;
     }
-    .clearfix;
-  }
 }
